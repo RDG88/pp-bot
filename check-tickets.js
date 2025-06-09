@@ -54,7 +54,7 @@ function isRelevantTour(tour) {
 }
 
 //
-// 📬 Telegram Sender
+// Telegram Sender
 //
 async function sendTelegramMessage(text) {
   const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
