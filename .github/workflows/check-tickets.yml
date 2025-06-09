@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout repository
+      - name: 📥 Checkout repository (with push access)
         uses: actions/checkout@v4
         with:
-          persist-credentials: true  # Required for push access
+          token: ${{ secrets.GH_PAT }}
 
       - name: ⚙️ Set up Node.js
         uses: actions/setup-node@v4

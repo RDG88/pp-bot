@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
-import 'dotenv/config'; // Optional for local .env use
+import 'dotenv/config'; // Optional: for local .env support
 
 //
 // 🔧 CONFIGURATION
@@ -23,7 +23,7 @@ const cliArgMode = process.argv.includes('--mode=all') ? 'all'
                   : 'none';
 
 //
-// 📅 Date range
+// 📅 Dynamic date range
 //
 function formatDate(date) {
   return date.toISOString().split('T')[0];
@@ -54,18 +54,17 @@ function isRelevantTour(tour) {
 }
 
 //
-// 📬 Telegram sender (with optional silent mode)
+// 📬 Telegram Sender
 //
-async function sendTelegramMessage(text, silent = false) {
+async function sendTelegramMessage(text) {
   const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
   await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       chat_id: TELEGRAM_CHAT_ID,
-      text: text.slice(0, 4000),
+      text: text.slice(0, 4000), // Telegram limit
       parse_mode: 'Markdown',
-      disable_notification: silent, // 🔕 true = silent, false = push
     }),
   });
 }
@@ -139,23 +138,21 @@ writeReportToFile(reportLines);
 saveTickets(available);
 
 //
-// 📬 Telegram logic
+// 📬 Telegram Logic
 //
 if (cliArgMode === 'new' && newOnes.length > 0) {
-  const message = `🚨 *New Peace Palace tickets available!*\n\n` +
-    newOnes.map(t =>
-      `• ${t.date} at ${t.time}: ${t.description} (${t.availableSeats} seats)`
-    ).join('\n');
-  await sendTelegramMessage(message, false); // 🔔 PUSH ALERT
+  const message = `🎉 New tickets available:\n` +
+    newOnes.map(t => `- ${t.date} at ${t.time}: ${t.description} (${t.availableSeats} seats)`).join('\n');
+  await sendTelegramMessage(message);
 }
 
 if (cliArgMode === 'all') {
   const message = [
-    `📅 *Daily tour overview* (${startDate} → ${endDate}):`,
+    `📅 Filtered tours (${startDate} → ${endDate}):`,
     ...relevant.map(t => {
       const status = t.availableSeats > 0 ? '🟢' : '🔴';
       return `${status} ${t.date} at ${t.time}: ${t.description} (${t.availableSeats} seats)`;
     })
   ].join('\n') || 'No tours found.';
-  await sendTelegramMessage(message, true); // 🔕 SILENT ALERT
+  await sendTelegramMessage(message);
 }
