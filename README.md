@@ -7,10 +7,10 @@ It supports:
 - Filtering for:
   - "Inside the Palace" and/or Garden tours
   - Dutch 🇳🇱 and/or English 🇬🇧 tours
-- ⏱ Scheduled checks with GitHub Actions
-- 🔔 Emergency Telegram alerts when new tickets become available posted to telegram
-- 💤 Daily silent summary of all filtered tours posted to telegram
-- 💾 Cached state to avoid duplicate alerts
+- Scheduled checks with GitHub Actions
+- Emergency Telegram alerts when new tickets become available posted to telegram
+- Daily silent summary of all filtered tours posted to telegram
+- Cached state to avoid duplicate alerts
 
 ---
 
