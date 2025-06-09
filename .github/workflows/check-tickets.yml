@@ -3,7 +3,7 @@ name: Peace Palace Ticket Monitor
 on:
   schedule:
     - cron: '0 * * * *'     # ⏱ Every hour: emergency alert
-    - cron: '0 8 * * *'     # 📅 Every day at 08:00 UTC: full summary
+    - cron: '0 14 * * *'    # 📅 16:00 NL time (14:00 UTC): full summary
   workflow_dispatch:         # 🧑‍💻 Manual trigger
 
 jobs:
