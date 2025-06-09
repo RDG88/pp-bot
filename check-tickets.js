@@ -3,7 +3,7 @@ import fs from 'fs';
 import 'dotenv/config'; // Optional: for local .env support
 
 //
-// 🔧 CONFIGURATION
+// CONFIGURATION
 //
 const INCLUDE_ENGLISH = true;
 const INCLUDE_DUTCH = true;
@@ -23,7 +23,7 @@ const cliArgMode = process.argv.includes('--mode=all') ? 'all'
                   : 'none';
 
 //
-// 📅 Dynamic date range
+// Dynamic date range
 //
 function formatDate(date) {
   return date.toISOString().split('T')[0];
@@ -70,7 +70,7 @@ async function sendTelegramMessage(text) {
 }
 
 //
-// 📂 File Helpers
+// File Helpers
 //
 function loadLastTickets() {
   if (!fs.existsSync(CACHE_FILE)) return [];
@@ -88,7 +88,7 @@ function diffTickets(oldList, newList) {
 }
 
 //
-// 🚀 MAIN
+// MAIN
 //
 async function fetchTickets() {
   const res = await fetch(API_URL, { headers: { 'Accept': 'application/json' } });
@@ -138,7 +138,7 @@ writeReportToFile(reportLines);
 saveTickets(available);
 
 //
-// 📬 Telegram Logic
+// Telegram Logic
 //
 if (cliArgMode === 'new' && newOnes.length > 0) {
   const message = `🎉 New tickets available:\n` +
