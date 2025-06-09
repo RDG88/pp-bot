@@ -8,7 +8,7 @@ import 'dotenv/config'; // Optional: for local .env support
 const INCLUDE_ENGLISH = true;
 const INCLUDE_DUTCH = true;
 const INCLUDE_INSIDE = true;
-const INCLUDE_GARDEN = true;
+const INCLUDE_GARDEN = false;
 const ONLY_AVAILABLE = false;
 const LOOKAHEAD_DAYS = 14;
 
@@ -37,7 +37,7 @@ const endDate = formatDate(future);
 const API_URL = `https://tt112apiweb.sites.ticketteam.cloud/DSServerDLL.dll/datasnap/rest/TMethods/GetListOfEventGroup//1/${startDate}/${endDate}/NL/W0001000`;
 
 //
-// 🧠 Filtering
+// Filtering
 //
 function matchesLanguage(desc) {
   const lower = desc.toLowerCase();
