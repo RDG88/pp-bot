@@ -1,0 +1,49 @@
+name: Peace Palace Ticket Monitor
+
+on:
+  schedule:
+    - cron: '0 * * * *'     # ⏱ Every hour: emergency alert
+    - cron: '0 8 * * *'     # 📅 Every day at 08:00 UTC: full summary
+  workflow_dispatch:         # 🧑‍💻 Manual trigger
+
+jobs:
+  check-tickets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true  # Required for push access
+
+      - name: ⚙️ Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🧠 Determine run mode
+        id: mode
+        run: |
+          if [[ "${{ github.event.schedule }}" == "0 * * * *" ]]; then
+            echo "mode=new" >> $GITHUB_OUTPUT
+          else
+            echo "mode=all" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 🚀 Run ticket checker
+        run: node check-tickets.js --mode=${{ steps.mode.outputs.mode }}
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: 📝 Commit updated ticket cache
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase
+          git add last-available-tickets.json
+          git diff --cached --quiet || git commit -m "🤖 Update ticket cache"
+          git push
