@@ -8,7 +8,7 @@ import 'dotenv/config'; // Optional: for local .env support
 const INCLUDE_ENGLISH = true;
 const INCLUDE_DUTCH = true;
 const INCLUDE_INSIDE = true;
-const INCLUDE_GARDEN = true;
+const INCLUDE_GARDEN = false;
 const ONLY_AVAILABLE = false;
 const LOOKAHEAD_DAYS = 35;
 
