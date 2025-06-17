@@ -59,7 +59,7 @@
     "date": "2025-06-22",
     "time": "14:00",
     "description": "Inside the Palace - English",
-    "availableSeats": 19,
+    "availableSeats": 17,
     "id": "250622BB"
   },
   {
@@ -75,5 +75,82 @@
     "description": "Inside the Palace - English",
     "availableSeats": 20,
     "id": "250622B7"
+  },
+  {
+    "date": "2025-06-28",
+    "time": "15:40",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "250628BG"
+  },
+  {
+    "date": "2025-06-28",
+    "time": "15:20",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "250628BF"
+  },
+  {
+    "date": "2025-06-28",
+    "time": "14:20",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "250628BC"
+  },
+  {
+    "date": "2025-06-28",
+    "time": "14:00",
+    "description": "In het Paleis - Nederlands/Dutch",
+    "availableSeats": 13,
+    "id": "250628AB"
+  },
+  {
+    "date": "2025-06-28",
+    "time": "13:00",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "250628B8"
+  },
+  {
+    "date": "2025-06-29",
+    "time": "15:40",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "250629BG"
+  },
+  {
+    "date": "2025-06-29",
+    "time": "15:20",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "250629BF"
+  },
+  {
+    "date": "2025-06-29",
+    "time": "14:20",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "250629BC"
+  },
+  {
+    "date": "2025-06-29",
+    "time": "14:00",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "250629BB"
+  },
+  {
+    "date": "2025-06-29",
+    "time": "13:00",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "250629B8"
+  },
+  {
+    "date": "2025-06-29",
+    "time": "12:40",
+    "description": "In het Paleis - Nederlands/Dutch",
+    "availableSeats": 20,
+    "id": "250629A7"
   }
 ]
