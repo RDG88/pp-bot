@@ -1,13 +1,6 @@
 [
   {
     "date": "2025-06-21",
-    "time": "13:50",
-    "description": "Inside the Palace - English",
-    "availableSeats": 1,
-    "id": "250621BA"
-  },
-  {
-    "date": "2025-06-21",
     "time": "12:40",
     "description": "In het Paleis - Nederlands/Dutch",
     "availableSeats": 1,
@@ -24,7 +17,7 @@
     "date": "2025-06-22",
     "time": "15:40",
     "description": "Inside the Palace - English",
-    "availableSeats": 3,
+    "availableSeats": 1,
     "id": "250622BG"
   },
   {
@@ -66,7 +59,7 @@
     "date": "2025-06-28",
     "time": "15:40",
     "description": "Inside the Palace - English",
-    "availableSeats": 15,
+    "availableSeats": 13,
     "id": "250628BG"
   },
   {
