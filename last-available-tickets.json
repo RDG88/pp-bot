@@ -3,7 +3,7 @@
     "date": "2025-06-28",
     "time": "15:20",
     "description": "Inside the Palace - English",
-    "availableSeats": 5,
+    "availableSeats": 3,
     "id": "250628BF"
   },
   {
@@ -19,13 +19,6 @@
     "description": "Inside the Palace - English",
     "availableSeats": 6,
     "id": "250629BF"
-  },
-  {
-    "date": "2025-06-29",
-    "time": "13:00",
-    "description": "Inside the Palace - English",
-    "availableSeats": 2,
-    "id": "250629B8"
   },
   {
     "date": "2025-06-29",
