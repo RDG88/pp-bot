@@ -3,21 +3,21 @@
     "date": "2025-08-09",
     "time": "15:00",
     "description": "Inside the Palace - English",
-    "availableSeats": 20,
+    "availableSeats": 12,
     "id": "250809BE"
   },
   {
     "date": "2025-08-09",
     "time": "13:40",
     "description": "Inside the Palace - English",
-    "availableSeats": 20,
+    "availableSeats": 19,
     "id": "250809BA"
   },
   {
     "date": "2025-08-09",
     "time": "12:20",
     "description": "In het Paleis - Nederlands",
-    "availableSeats": 18,
+    "availableSeats": 16,
     "id": "250809A6"
   }
 ]
