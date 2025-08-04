@@ -17,14 +17,14 @@
     "date": "2025-08-16",
     "time": "12:20",
     "description": "In het Paleis - Nederlands",
-    "availableSeats": 4,
+    "availableSeats": 1,
     "id": "250816A6"
   },
   {
     "date": "2025-08-16",
     "time": "16:00",
     "description": "Inside the Palace - English",
-    "availableSeats": 18,
+    "availableSeats": 12,
     "id": "250816BH"
   },
   {
@@ -45,7 +45,7 @@
     "date": "2025-08-17",
     "time": "13:20",
     "description": "Inside the Palace - English",
-    "availableSeats": 12,
+    "availableSeats": 11,
     "id": "250817B9"
   },
   {
@@ -66,7 +66,7 @@
     "date": "2025-08-17",
     "time": "12:00",
     "description": "In het Paleis - Nederlands",
-    "availableSeats": 19,
+    "availableSeats": 15,
     "id": "250817A5"
   }
 ]
