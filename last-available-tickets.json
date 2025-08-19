@@ -10,7 +10,7 @@
     "date": "2025-08-30",
     "time": "13:20",
     "description": "Inside the Palace - English",
-    "availableSeats": 18,
+    "availableSeats": 16,
     "id": "250830B9"
   },
   {
@@ -31,7 +31,7 @@
     "date": "2025-08-31",
     "time": "14:40",
     "description": "Inside the Palace - English",
-    "availableSeats": 7,
+    "availableSeats": 3,
     "id": "250831BD"
   },
   {
@@ -45,7 +45,7 @@
     "date": "2025-08-31",
     "time": "16:00",
     "description": "Inside the Palace - English",
-    "availableSeats": 8,
+    "availableSeats": 6,
     "id": "250831BH"
   }
 ]
