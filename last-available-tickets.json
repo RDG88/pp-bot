@@ -3,7 +3,7 @@
     "date": "2025-09-07",
     "time": "14:40",
     "description": "Inside the Palace - English",
-    "availableSeats": 16,
+    "availableSeats": 14,
     "id": "250907BD"
   },
   {
@@ -17,7 +17,7 @@
     "date": "2025-09-07",
     "time": "15:20",
     "description": "Inside the Palace - English",
-    "availableSeats": 20,
+    "availableSeats": 18,
     "id": "250907BF"
   },
   {
@@ -31,14 +31,14 @@
     "date": "2025-09-07",
     "time": "16:40",
     "description": "Inside the Palace - English",
-    "availableSeats": 11,
+    "availableSeats": 10,
     "id": "250907BJ"
   },
   {
     "date": "2025-09-07",
     "time": "13:20",
     "description": "Inside the Palace - English",
-    "availableSeats": 18,
+    "availableSeats": 14,
     "id": "250907B9"
   }
 ]
