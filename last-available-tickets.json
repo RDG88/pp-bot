@@ -10,7 +10,7 @@
     "date": "2025-10-04",
     "time": "12:40",
     "description": "Inside the Palace - English",
-    "availableSeats": 19,
+    "availableSeats": 17,
     "id": "251004B7"
   },
   {
@@ -59,7 +59,7 @@
     "date": "2025-10-04",
     "time": "15:40",
     "description": "In het Paleis - Nederlands/Dutch",
-    "availableSeats": 20,
+    "availableSeats": 14,
     "id": "251004AG"
   },
   {
@@ -80,7 +80,7 @@
     "date": "2025-10-05",
     "time": "13:00",
     "description": "In het Paleis - Nederlands/Dutch",
-    "availableSeats": 14,
+    "availableSeats": 12,
     "id": "251005AB"
   },
   {
@@ -122,7 +122,7 @@
     "date": "2025-10-05",
     "time": "15:40",
     "description": "Inside the Palace - English",
-    "availableSeats": 20,
+    "availableSeats": 16,
     "id": "251005BG"
   }
 ]
