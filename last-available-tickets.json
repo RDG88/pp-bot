@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "date": "2025-10-04",
+    "time": "12:20",
+    "description": "In het Paleis - Nederlands",
+    "availableSeats": 20,
+    "id": "251004A6"
+  },
+  {
+    "date": "2025-10-04",
+    "time": "12:40",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "251004B7"
+  },
+  {
+    "date": "2025-10-04",
+    "time": "13:00",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "251004BB"
+  },
+  {
+    "date": "2025-10-04",
+    "time": "13:40",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "251004BA"
+  },
+  {
+    "date": "2025-10-04",
+    "time": "14:00",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "251004B8"
+  },
+  {
+    "date": "2025-10-04",
+    "time": "14:20",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "251004BC"
+  },
+  {
+    "date": "2025-10-04",
+    "time": "15:00",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "251004BE"
+  },
+  {
+    "date": "2025-10-04",
+    "time": "15:20",
+    "description": "Inside the Palace - English",
+    "availableSeats": 20,
+    "id": "251004BF"
+  },
+  {
+    "date": "2025-10-04",
+    "time": "15:40",
+    "description": "In het Paleis - Nederlands/Dutch",
+    "availableSeats": 20,
+    "id": "251004AG"
+  }
+]
